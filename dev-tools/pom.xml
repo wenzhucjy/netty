@@ -31,7 +31,7 @@
 
   <build>
     <plugins>
-      <plugin>
+      <!--<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
         <version>1.5</version>
@@ -47,7 +47,7 @@
             <include>**/*</include>
           </includes>
         </configuration>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 </project>

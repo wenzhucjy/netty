@@ -288,7 +288,7 @@
           </plugin>
 
           <!-- Generate Javadoc -->
-          <plugin>
+          <!--<plugin>
             <artifactId>maven-javadoc-plugin</artifactId>
             <executions>
               <execution>
@@ -323,7 +323,7 @@
               </additionalparam>
               <locale>en_US</locale>
             </configuration>
-          </plugin>
+          </plugin>-->
         </plugins>
       </build>
     </profile>

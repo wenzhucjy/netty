@@ -71,7 +71,7 @@
 
   <build>
     <plugins>
-      <plugin>
+     <!-- <plugin>
         <groupId>me.normanmaurer.maven.autobahntestsuite</groupId>
         <artifactId>autobahntestsuite-maven-plugin</artifactId>
         <version>0.1.5</version>
@@ -99,7 +99,7 @@
             <version>2.7.1</version>
           </dependency>
         </dependencies>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 </project>

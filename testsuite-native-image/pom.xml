@@ -96,13 +96,13 @@
           <buildArgs>--report-unsupported-elements-at-runtime --allow-incomplete-classpath</buildArgs>
         </configuration>
       </plugin>
-      <plugin>
+     <!-- <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.6.0</version>
         <executions>
-          <!-- This will do a whitesmoke test: if the substitutions are missing the binary will fail to run -->
-          <!-- If the metadata is missing the build above will fail -->
+          &lt;!&ndash; This will do a whitesmoke test: if the substitutions are missing the binary will fail to run &ndash;&gt;
+          &lt;!&ndash; If the metadata is missing the build above will fail &ndash;&gt;
           <execution>
             <id>verify-native-image</id>
             <phase>verify</phase>
@@ -115,7 +115,7 @@
           <skip>${skipNativeImageTestsuite}</skip>
           <executable>${project.build.directory}/${project.artifactId}</executable>
         </configuration>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 </project>

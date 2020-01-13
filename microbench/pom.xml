@@ -191,6 +191,12 @@
       <classifier>${tcnative.classifier}</classifier>
       <optional>false</optional>
     </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-common</artifactId>
+      <version>4.1.29.Final</version>
+    </dependency>
+
   </dependencies>
 
   <build>

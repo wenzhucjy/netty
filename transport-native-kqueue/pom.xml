@@ -256,10 +256,10 @@
       </properties>
       <build>
         <plugins>
-          <plugin>
+        <!--  <plugin>
             <artifactId>maven-dependency-plugin</artifactId>
             <executions>
-              <!-- unpack the unix-common static library and include files -->
+              &lt;!&ndash; unpack the unix-common static library and include files &ndash;&gt;
               <execution>
                 <id>unpack</id>
                 <phase>generate-sources</phase>
@@ -277,9 +277,9 @@
                 </configuration>
               </execution>
             </executions>
-          </plugin>
+          </plugin>-->
 
-          <plugin>
+        <!--  <plugin>
             <groupId>org.fusesource.hawtjni</groupId>
             <artifactId>maven-hawtjni-plugin</artifactId>
             <executions>
@@ -289,9 +289,9 @@
                   <name>netty_transport_native_kqueue_${os.detected.arch}</name>
                   <nativeSourceDirectory>${nativeSourceDirectory}</nativeSourceDirectory>
                   <libDirectory>${project.build.outputDirectory}</libDirectory>
-                  <!-- We use Maven's artifact classifier instead.
+                  &lt;!&ndash; We use Maven's artifact classifier instead.
                        This hack will make the hawtjni plugin to put the native library
-                       under 'META-INF/native' rather than 'META-INF/native/${platform}'. -->
+                       under 'META-INF/native' rather than 'META-INF/native/${platform}'. &ndash;&gt;
                   <platform>.</platform>
                   <forceConfigure>true</forceConfigure>
                   <forceAutogen>true</forceAutogen>
@@ -306,7 +306,7 @@
                 </goals>
               </execution>
             </executions>
-          </plugin>
+          </plugin>-->
 
           <plugin>
             <artifactId>maven-jar-plugin</artifactId>
@@ -404,6 +404,13 @@
       <classifier>${tcnative.classifier}</classifier>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-common</artifactId>
+      <version>4.1.29.Final</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>

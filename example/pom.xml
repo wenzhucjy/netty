@@ -174,7 +174,7 @@
   <build>
     <plugins>
       <!-- run-example.sh invokes this plugin to launch an example. -->
-      <plugin>
+      <!--<plugin>
         <groupId>kr.motd.maven</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <configuration>
@@ -189,7 +189,7 @@
             ${exampleClass}
           </commandlineArgs>
         </configuration>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 </project>
